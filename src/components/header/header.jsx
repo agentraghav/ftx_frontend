@@ -10,6 +10,7 @@ import Button from '@restart/ui/esm/Button';
 
 const Header = ({getCartItems}) => {
   let itemsInCart = getCartItems();
+  const token = localStorage.getItem('auth-token');
   const {userData, setUserData} = useContext(UserContext);
   const logout = () => {
     setUserData({
@@ -29,7 +30,7 @@ const Header = ({getCartItems}) => {
             responsive
           />
         </Link>
-        {userData.user ? (
+        {userData.user || token ? (
           <>
             <Nav className="justify-content-end">
               <Link to="/">

@@ -21,7 +21,7 @@ const Home = () => {
     },
     {
       text: 'Utilities',
-      src: 'https://images.pexels.com/photos/7718712/pexels-photo-7718712.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+      src: 'https://images.pexels.com/photos/4906332/pexels-photo-4906332.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
     },
   ];
 
