@@ -1,6 +1,5 @@
 import React, {useState, useContext} from 'react';
 import UserContext from '../../context/user-context';
-import {useNavigate} from 'react-router-dom';
 import {Row, Col, Image} from 'react-bootstrap';
 import './styles.css';
 import axios from 'axios';
@@ -21,11 +20,40 @@ function loadScript(src) {
 
 const Cart = ({cartItems, removeItem, addItem, resetCart}) => {
   let cartTotal = cartItems.map(itemData => itemData.price * itemData.quantity).reduce((a, b) => a + b, 0);
+  console.log(cartItems);
+  const userId = localStorage.getItem('id');
+  const token = localStorage.getItem('auth-token');
   const {userData} = useContext(UserContext);
   const [amount] = useState(cartTotal);
-  const {navigate} = useNavigate();
-
   const name = userData.user.name;
+
+  const orderURL = process.env.REACT_APP_BASEURL + '/api/order';
+
+  const updateOrder = async () => {
+    const payload = [];
+    cartItems.map(itemData => {
+      payload.push({productId: itemData.id, quantity: itemData.quantity, price: itemData.price});
+    });
+    console.log(token);
+    try {
+      const res = await axios.post(
+        orderURL,
+        {userId, products: payload},
+        {
+          headers: {
+            'x-auth-token': token,
+          },
+        },
+      );
+      if (res) {
+        window.location = '/';
+      }
+      console.log(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   const displayRazorpay = async () => {
     const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js');
     if (!res) {
@@ -46,7 +74,7 @@ const Cart = ({cartItems, removeItem, addItem, resetCart}) => {
         image: 'https://cdn.shopify.com/s/files/1/1132/3440/t/4/assets/logo.png?v=16492789083930716568',
         handler: function (response) {
           resetCart();
-          window.location = '/';
+          updateOrder();
         },
         prefill: {
           name,
