@@ -3,6 +3,7 @@ import UserContext from '../../context/user-context';
 import {Row, Col, Image} from 'react-bootstrap';
 import './styles.css';
 import axios from 'axios';
+import Loader from 'react-loader-spinner';
 
 function loadScript(src) {
   return new Promise(resolve => {
@@ -25,6 +26,7 @@ const Cart = ({cartItems, removeItem, addItem, resetCart}) => {
   const token = localStorage.getItem('auth-token');
   const {userData} = useContext(UserContext);
   const [amount] = useState(cartTotal);
+  const [loading, setLoading] = useState(false);
   const name = userData.user.name;
 
   const orderURL = process.env.REACT_APP_BASEURL + '/api/order';
@@ -46,7 +48,8 @@ const Cart = ({cartItems, removeItem, addItem, resetCart}) => {
         },
       );
       if (res) {
-        window.location = '/';
+        alert('Your Order has been placed successfully!');
+        window.location = '/orders';
       }
       console.log(res);
     } catch (err) {
@@ -55,6 +58,7 @@ const Cart = ({cartItems, removeItem, addItem, resetCart}) => {
   };
 
   const displayRazorpay = async () => {
+    setLoading(true);
     const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js');
     if (!res) {
       alert('Razorpay SDK failed to load. Are you online?');
@@ -85,6 +89,7 @@ const Cart = ({cartItems, removeItem, addItem, resetCart}) => {
       const paymentObject = new window.Razorpay(options);
       paymentObject.open();
     }
+    setLoading(false);
   };
 
   return (
@@ -134,7 +139,7 @@ const Cart = ({cartItems, removeItem, addItem, resetCart}) => {
             </p>
 
             <button onClick={displayRazorpay} className="add-to-pay">
-              Pay
+              {loading ? <Loader type="Puff" color="white" height={20} width={20} /> : 'Pay'}
             </button>
           </Col>
         ) : (
