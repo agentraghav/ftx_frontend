@@ -1,82 +1,95 @@
 export default [
   {
     id: '1',
-    name: "Men's Round Neck T-shirt",
-    brand: 'Levis',
-    color: 'White',
-    price: 999,
-    imgsrc: 'https://g3fashion.com/upload/products/levis_white_hued_printed_t_shirt_1557552853as1328364_1.jpg',
+    name: 'Cotton',
+    price: 1500,
+    description:
+      'Material - 100% Pure Cotton, Pattern: Plain, Length: 1.60 metres, Width 54 Inches or 1.37 metres. It can be custom-made to your exact measurements.Lightweight and Long Lasting Fabric. Ideal for Stitching Size S/ M/ L/ XL/ XXL/ XXXL Shirts.',
+    imgsrc: 'https://images.pexels.com/photos/6850664/pexels-photo-6850664.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
     id: '2',
-    name: 'Men Navy Slim Fit Solid Casual Shirt',
-    brand: 'Levis',
-    color: 'Navy Blue',
-    price: 1199,
-    imgsrc:
-      'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/9911451/2019/7/31/ec838275-487b-4f6e-b680-74ce183981e91564573884640-Levis-Men-Shirts-1601564573883359-1.jpg',
+    name: 'Mulberry Silk',
+    price: 1990,
+    description:
+      'Material - Raw Silk Length - 1mtr, Width - 111.76cm. This product has been woven by hand and may have slight irregularities that are a natural outcome of the human involvement in the process.',
+    imgsrc: 'https://images.pexels.com/photos/4863040/pexels-photo-4863040.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
     id: '3',
-    name: 'Men Blue Super Slim Fit Solid Casual Shirt',
-    brand: 'Peter England',
-    color: 'Blue',
-    price: 1199,
-    imgsrc:
-      'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13142232/2020/12/18/d07f3330-0725-43cb-bad3-64b9644b6bab1608287498735-PETER-ENGLAND-UNIVERSITY-Men-Shirts-7191608287497014-1.jpg',
+    name: 'Lambswool',
+    price: 2000,
+    description:
+      ' With an impressive growth record in this highly competitive industry, we are providing a qualitative range of Cashmere Yarn. Features: - High tenacity - Knotless',
+    imgsrc: 'https://images.pexels.com/photos/2070676/pexels-photo-2070676.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
     id: '4',
-    name: 'Men Blue Slim Tapered Michael Fit Mid-Rise Clean Look Stretchable Jeans',
-    brand: 'Flying Machine',
-    color: 'Blue',
-    price: 2500,
-    imgsrc:
-      'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12971096/2020/12/11/8ed339b6-a778-43db-b144-7b7a4d155fb81607667428948-Mens-Cotton-Blend-Slim-Blue-Jeans-7491607667426666-2.jpg',
+    name: 'Nylon',
+    price: 450,
+    description:
+      'Lustre: Bright, Country of Origin: Made in India, Simpex Dylex Nylon yarn exclusively used in weaving in place of the pure silk with the same feel and luster.',
+    imgsrc: 'https://images.pexels.com/photos/2971245/pexels-photo-2971245.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
     id: '5',
-    name: 'Men Blue 513 Straight Fit Mid-Rise Clean Look Stretchable Jeans',
-    brand: 'Levis',
-    color: 'Blue',
-    price: 3000,
-    imgsrc:
-      'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11165816/2020/10/7/921e2e12-bf92-49a2-bdac-60b42a3aaabf1602061502602-Levis-Men-Jeans-7191602061499538-1.jpg',
+    name: 'Polyster',
+    price: 65,
+    description:
+      ' Color: Pink, Prints/Pattern: Plain Solids Fabric Content: 100% Polyester Usage: Apparel/Clothing Material: Nylon Polyester',
+    imgsrc: 'https://images.pexels.com/photos/4814043/pexels-photo-4814043.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
     id: '6',
-    name: 'Men Black Slim Fit Mid-Rise Clean Look Stretchable Jeans',
-    brand: 'Highlander',
-    color: 'Black',
-    price: 2000,
-    imgsrc:
-      'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2173989/2017/12/5/11512460656327-HIGHLANDER-Men-Black-Slim-Fit-Mid-Rise-Clean-Look-Stretchable-Jeans-7391512460656115-1.jpg',
+    name: 'Leather',
+    price: 60,
+    description:
+      'Usage/Application: Shoes, Bag, Garment etc Size: 2.00 sq.ft to 22 sq.ft Thickness: 0.3 mm to 2.2 mm Brand: Natural Leather',
+    imgsrc: 'https://images.pexels.com/photos/2170661/pexels-photo-2170661.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
     id: '7',
-    name: 'Men White Solid Trainers',
-    brand: 'H & M',
-    color: 'White',
-    price: 1999,
-    imgsrc:
-      'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/7/18/0a56543f-2680-4678-990e-c330d3ab22c41595031724557-1.jpg',
+    name: 'Rose Quartz',
+    price: 600,
+    description: 'Stone Name: Rose Quartz, Shape: Round, Usage/Application: Making Jewelry, Color: Baby pink, Weight: 40 gram approx',
+    imgsrc: 'https://images.pexels.com/photos/4040589/pexels-photo-4040589.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
     id: '8',
-    name: 'Men Navy Blue & White Leather Sneakers',
-    brand: 'Puma',
-    color: 'Navy Blue',
-    price: 1799,
-    imgsrc:
-      'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/9433651/2019/4/26/af36affd-89de-454e-b34d-f92eaa0d7bd21556265229743-Puma-Men-Navy-Blue-Sneakers-611556265228796-1.jpg',
+    name: 'Amethyst',
+    price: 2000,
+    description: 'Material: Stone, Color: Violet, Weight: 20 Gm, Packaging Type: Box, State: Crystal, Surface Finish: Glossy',
+    imgsrc: 'https://images.pexels.com/photos/4040593/pexels-photo-4040593.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
     id: '9',
-    name: 'Men Off-White GAIMAN Sneakers',
-    brand: 'U.S. Polo Assn.',
-    color: 'White',
-    price: 1900,
-    imgsrc:
-      'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/9/23/3acbae82-1f4c-4903-a4f5-d23b888d05fa1569223902935-1.jpg',
+    name: 'Paper',
+    price: 145,
+    description:
+      'Material: Paper, Usage/Application: Photocopy, Printing, etc, Packaging Type: Packet, Color: White, Packaging Size: 500 Sheets per pack, Size: A4',
+    imgsrc: 'https://images.pexels.com/photos/4466176/pexels-photo-4466176.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+  },
+  {
+    id: '10',
+    name: 'Brushes',
+    price: 45,
+    description:
+      'Size: 2,3,4.5 Inch, Handle Material: Wooden, Usage/Application: Painting, Bristle Material: Polyester, Packaging Type: Box, Price - Rs 45/piece',
+    imgsrc: 'https://images.pexels.com/photos/1646953/pexels-photo-1646953.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+  },
+  {
+    id: '11',
+    name: 'Pencils',
+    price: 1500,
+    description: 'Color: Multi Color, Material: Wooden, Application: Drawing, Packing Type: Tin Box, Pencil Type: Water Color Pencils',
+    imgsrc: 'https://images.pexels.com/photos/159821/pencils-colored-drawing-school-159821.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+  },
+  {
+    id: '12',
+    name: 'Opal',
+    price: 2000,
+    description:
+      'Finish: Polished, Weight: All Sizes Available, Color: White, Usage/Application: Birth Stone / Jewellery, Brand: Astro Ratnam, Composition: 100% Natural',
+    imgsrc: 'https://images.pexels.com/photos/7256671/pexels-photo-7256671.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
 ];

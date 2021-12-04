@@ -7,7 +7,7 @@ import './styles.css';
 const Item = ({addItem}) => {
   const {id} = useParams();
   let itemData = shopItems.find(shopItem => shopItem.id === id);
-  let {name, brand, price, imgsrc} = itemData;
+  let {name, brand, price, imgsrc, description} = itemData;
 
   useEffect(() => {
     console.log('id', id);
@@ -24,12 +24,7 @@ const Item = ({addItem}) => {
         <p className="item-sub">
           <i class="fas fa-rupee-sign" /> {price}
         </p>
-        <p className="item-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-          in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <p className="item-desc">{description}</p>
         <button className="add-to" onClick={() => addItem(itemData)}>
           <i class="fas fa-shopping-bag"></i> Add To Cart
         </button>
