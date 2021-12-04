@@ -12,7 +12,7 @@ const Footer = () => {
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
               </h1>
             </div>
-            <h1 className="foot-data">- Hebe Boutique 450 Queen Street, Kuripuni, Masterton 5810</h1>
+            <h1 className="foot-data">- 54, Golf Course Rd, Suncity, Sector 54, Gurugram</h1>
           </div>
           <div>
             <div className="foot-icon">
