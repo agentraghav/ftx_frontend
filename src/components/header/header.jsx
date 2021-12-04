@@ -9,7 +9,7 @@ import UserContext from '../../context/user-context';
 import Button from '@restart/ui/esm/Button';
 
 const Header = ({getCartItems}) => {
-  let itemsInCart;
+  let itemsInCart = getCartItems();
   const {userData, setUserData} = useContext(UserContext);
   const logout = () => {
     setUserData({

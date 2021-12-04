@@ -1,0 +1,30 @@
+.about-bg {
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.6);
+  background-image: url('../../images/back-about.jpeg');
+}
+
+.about-head {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 20%;
+  margin-top: 100px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.heading-main {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  margin-left: 35%;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 2px;
+}

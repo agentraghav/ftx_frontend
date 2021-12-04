@@ -77,7 +77,7 @@ const Register = () => {
     }
   };
   return (
-    <Col className="font" style={{marginTop: 200, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <Col className="font" style={{marginTop: 200, marginBottom: 200, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
       <Form style={{width: 400}} onSubmit={submit}>
         <Form.Group size="lg" controlId="name">
           <Form.Label>Name</Form.Label>

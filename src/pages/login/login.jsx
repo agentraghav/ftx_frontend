@@ -40,7 +40,7 @@ const Login = () => {
     }
   };
   return (
-    <Col className="font" style={{marginTop: 200, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <Col className="font" style={{marginTop: 300, marginBottom: 300, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
       <Form style={{width: 400}} onSubmit={submit}>
         <Form.Group style={{marginTop: 50}} size="lg" controlId="email">
           <Form.Label>Email</Form.Label>
