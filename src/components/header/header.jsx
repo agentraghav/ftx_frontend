@@ -17,6 +17,7 @@ const Header = ({getCartItems}) => {
       user: undefined,
     });
     localStorage.setItem('auth-token', '');
+    localStorage.setItem('id', '');
   };
   return (
     <Navbar fixed="top" className="nav-style" expand="lg" variant="light">

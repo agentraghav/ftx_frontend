@@ -11,6 +11,7 @@ import About from './pages/about/about';
 import Item from './components/item/item';
 import UserContext from './context/user-context';
 import Footer from './components/footer/footer';
+import YourOrder from './pages/yourOrders/yourOrders';
 const App = () => {
   const [userData, setUserData] = useState({
     token: undefined,
@@ -80,6 +81,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/shop/:id" element={<Item addItem={addItem} />} />
           <Route path="/cart" element={<Cart cartItems={cartItems} removeItem={removeItem} addItem={addItem} resetCart={resetCart} />} />
+          <Route path="/orders" element={<YourOrder />} />
         </Routes>
         <Footer />
       </UserContext.Provider>
