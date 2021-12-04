@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# FTX HEBE FRONTEND
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The frontend of this web app is build using ReactJs. 
+Inside folder /src/components it contains all the components that are created to build the web-app
+Inside /src/pages it contains all the pages that shown on the website
+Inside /src/context it contains the context api which is used to store user information
 
-## Available Scripts
+## End to End working project link: https://ftxhebefrontend.herokuapp.com/
 
-In the project directory, you can run:
+## To Run this Project
 
-### `yarn start`
+- Clone the repo
+- Cd into ftx_frontend folder
+- run `yarn install` in your termial to install all the dependencies, or if yarn doesn't works for you, you can run `npm install` to install all the dependencies
+- nom run `npm start` command in your terminal, this command will run our frontend on port 3000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Libraries that are used :
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Axios: Promise based HTTP client for the browser and node.js
+- React-Bootstrap: React-Bootstrap is compatible with various versions of Bootstrap
+- React-Loader-Spinner: provides simple React SVG spinner component which can be implemented for async await operation before data loads to the view.
+- React-Dom: This package serves as the entry point to the DOM and server renderers for React. It is intended to be paired with the generic React package, which is shipped as react to npm
+- React-Router-Dom: The react-router-dom package contains bindings for using React Router in web applications. 
+- React-Scripts: This package includes scripts and configuration used by Create React App.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Code for the backend of FTX HEBE : https://github.com/agentraghav/ftx_backend
