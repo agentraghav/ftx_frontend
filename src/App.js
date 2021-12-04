@@ -19,8 +19,8 @@ const App = () => {
       localStorage.setItem('auth-token', '');
       token = '';
     }
-    const tokenURL = process.env.baseUrl + '/users/tokenIsValid';
-    const userDataURL = process.env.baseUrl + '/users/';
+    const tokenURL = process.env.REACT_APP_BASEURL + '/users/tokenIsValid';
+    const userDataURL = process.env.REACT_APP_BASEURL + '/users';
     const tokenResponse = await axios.post(tokenURL, null, {headers: {'x-auth-token': token}});
     if (tokenResponse.data) {
       const userRes = await axios.get(userDataURL, {

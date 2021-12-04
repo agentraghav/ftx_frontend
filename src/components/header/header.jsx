@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import './styles.css';
 import {Nav} from 'react-bootstrap';
 import {Navbar} from 'react-bootstrap';
-import {useNavigate, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {Container} from 'react-bootstrap';
 import {Image} from 'react-bootstrap';
 import UserContext from '../../context/user-context';
@@ -11,9 +11,6 @@ import Button from '@restart/ui/esm/Button';
 const Header = ({getCartItems}) => {
   let itemsInCart;
   const {userData, setUserData} = useContext(UserContext);
-  const navigate = useNavigate();
-  const register = () => navigate('/register');
-  const login = () => navigate('/login');
   const logout = () => {
     setUserData({
       token: undefined,
@@ -31,7 +28,7 @@ const Header = ({getCartItems}) => {
             responsive
           />
         </Link>
-        {userData?.user ? (
+        {userData.user ? (
           <>
             <Nav className="justify-content-end">
               <Link to="/">
